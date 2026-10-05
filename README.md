@@ -5,14 +5,14 @@ A Unicode port of Jax's INI++ Extension that includes extra features than the cl
 # What is an INI File?
 An INI file is mostly used to save progress, configuration, or store other information. Each file stores multiple groups that have items inside them *(Values and Strings)*.
 Example of an INI File:
-[Progress]
-Coins=100
-Goals=5
-SuperKick=1
-[Config]
-Fullscreen=1
-VSync=1
-Anti-Aliasing=1
+- [Progress]
+- Coins=100
+- Goals=5
+- SuperKick=1
+- [Config]
+- Fullscreen=1
+- VSync=1
+- Anti-Aliasing=1
 # Features
 - Custom-Algorithm Encryption - Make your INI file extra protected!
 - Compression - Reduce the file size of your INI!
@@ -25,3 +25,8 @@ Anti-Aliasing=1
 - Comments - INI++ does not support comments. No matter what, they will always get removed.
 - Ordering of Items and Groups - The current ordering in INI++ is Alphabetical
 - Blank lines, spaces, etc.
+# Unicode Port Limitations
+Like mentioned, the Unicode Port still lacks some features that are avaliable in the non-unicode port, such as:
+- Advanced Debugging Features
+- And more...
+
