@@ -2844,8 +2844,10 @@ auto FUSION_API expressionFname(RunData* const run_data, e_params_t) noexcept
 	run_data->rHo.hoFlags |= HOF_STRING;
 	Data const& data{*(run_data->data)};
 
-	NOT_YET_IMPLEMENTED
-	//
+	if(data.settings.ini_path.has_value())
+	{
+		return temp_string(run_data, data.settings.ini_path.value().native());
+	}
 
 	return (expression_return_t)_T("");
 }
